@@ -1,0 +1,22 @@
+print("единицы: км, м, см, мм, mi, yd")
+a = input("Введите исходную единицу: ")
+
+b = input("Введите целевую единицу: ") value = float(input("Введите значение: ")) units = {
+"км": 1000,
+"м": 1,
+
+	"см":	0.01,
+	"мм":	0.001,
+	"mi":	1609.344,
+	"yd":	0.9144
+}		
+
+
+
+if a in units and b in units: meters = value * units[a] result = meters / units[b]
+print(f"Результат: {result:.6f} {b}")
+
+
+else:
+
+print("Ошибка: неизвестная единица измерения.")
